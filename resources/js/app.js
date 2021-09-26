@@ -20,9 +20,13 @@ window.Vue = require('vue').default;
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 const tarjeta = require("./components/TarjetaComponent.vue").default;
+const carrito = require("./components/CarritoComponent.vue").default;
+
+// import carrito from './components/CarritoComponent.vue';
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('hola',tarjeta);
+Vue.component('carrito',carrito);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
